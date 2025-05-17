@@ -63,8 +63,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" relative flex flex-col w-full items-center gap-[.5rem] z-[20] mt-[8rem] ">
-        <div className=" h-full w-[70rem] absolute flex top-[45%] justify-between z-[35] ">
+      <div className=" relative flex flex-col w-full items-center gap-[.5rem] z-[30] mt-[8rem] ">
+        <div className=" h-full w-[70rem] absolute flex top-[45%] justify-between z-[-1] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="15"
