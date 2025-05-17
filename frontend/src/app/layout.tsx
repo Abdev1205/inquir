@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     canonical: "https://inquir.vercel.app",
   },
   verification: {
-    google: "OXAsGF11gjk-xBpdKYTUUxWhz-xahTi4nsVEV2vp73E",
+    google: "0U3Gt4Ivo_EED11zL8wjf-4O6oMSmQo1jdsv7_IVflM",
   },
   applicationName: "Inquir",
   category: "Feedback Platform",
