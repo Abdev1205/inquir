@@ -6,6 +6,7 @@ import assets from "../../../../public/assets/assetsManager";
 import AnimatedGradientText from "@/components/ui/animated-gradient-text";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CustomImage } from "../common/CustomImage";
 
 type Star = {
   id: number;
@@ -20,7 +21,6 @@ const Hero = () => {
   const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
-    // Generate random stars
     const generateStars = () => {
       const newStars = [];
       const starCount = 500; // Number of stars to generate
@@ -63,7 +63,33 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" relative flex flex-col items-center gap-[.5rem] z-[20] mt-[8rem] ">
+      <div className=" relative flex flex-col w-full items-center gap-[.5rem] z-[20] mt-[8rem] ">
+        <div className=" h-full w-[70rem] absolute flex top-[45%] justify-between z-[35] ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+          >
+            <path
+              d="M7.5 0L7.9249 2.57958C8.30493 4.88677 10.1132 6.69507 12.4204 7.0751L15 7.5L12.4204 7.9249C10.1132 8.30493 8.30493 10.1132 7.9249 12.4204L7.5 15L7.0751 12.4204C6.69507 10.1132 4.88677 8.30493 2.57958 7.9249L0 7.5L2.57958 7.0751C4.88677 6.69507 6.69507 4.88677 7.0751 2.57958L7.5 0Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+          >
+            <path
+              d="M7.5 0L7.9249 2.57958C8.30493 4.88677 10.1132 6.69507 12.4204 7.0751L15 7.5L12.4204 7.9249C10.1132 8.30493 8.30493 10.1132 7.9249 12.4204L7.5 15L7.0751 12.4204C6.69507 10.1132 4.88677 8.30493 2.57958 7.9249L0 7.5L2.57958 7.0751C4.88677 6.69507 6.69507 4.88677 7.0751 2.57958L7.5 0Z"
+              fill="white"
+            />
+          </svg>
+        </div>
         <AnimatedGradientText className="bg-transparent mb-[1rem] ">
           ✨
           <span
@@ -94,7 +120,7 @@ const Hero = () => {
       </div>
 
       <div className=" z-[20] mt-[3rem] ">
-        <Image
+        <CustomImage
           src={assets.image.HeroImage}
           alt="Hero"
           width={1000}

@@ -25,7 +25,7 @@ export const CustomImage: React.FC<ImageProps> = ({
       {loading && (
         <Skeleton
           className={cn(
-            "absolute inset-0 w-full h-full",
+            "absolute inset-0 w-full h-full bg-[#0C0C1A] ",
             className // Apply same styles to skeleton
           )}
         />
